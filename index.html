@@ -7,11 +7,11 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js" charset="utf-8"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/locale/it.js" charset="utf-8"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.4/handlebars.min.js" charset="utf-8"></script>
-        <title></title>
+        <title>Calendar</title>
     </head>
     <body>
         <div class="top-calendar">
-            <h1><span id="nome-mese">Gennaio</span> 2018</h1>
+            <h1><span id="nome-mese">gennaio</span> <span id="nome-anno">2018</span></h1>
             <div class="top-navigation">
                 <button class="btn-navigation mese-prec"><< Mese precedente</button>
                 <button class="btn-navigation mese-succ">Mese successivo >></button>
@@ -26,6 +26,8 @@
         <script id="calendar-template" type="text/x-handlebars-template">
             <li data-day="{{dataDay}}"> {{day}} </li>
         </script>
+
+
         <script src="js/main.js" charset="utf-8"></script>
     </body>
 </html>
