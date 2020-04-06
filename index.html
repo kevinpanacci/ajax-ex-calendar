@@ -13,18 +13,20 @@
         <div class="top-calendar">
             <h1><span id="nome-mese">gennaio</span> <span id="nome-anno">2018</span></h1>
             <div class="top-navigation">
-                <button class="btn-navigation mese-prec"><< Mese precedente</button>
-                <button class="btn-navigation mese-succ">Mese successivo >></button>
+                <button class="btn-navigation mese-prec" disabled><< Mese precedente</button>
+                <button class="btn-navigation mese-succ" disabled>Mese successivo >></button>
             </div>
         </div>
         <div class="main-calendar">
-            <ul id="calendar">
+            <div class="week">
+                <ul id="calendar">
 
-            </ul>
+                </ul>
+            </div>
         </div>
 
         <script id="calendar-template" type="text/x-handlebars-template">
-            <li data-day="{{dataDay}}"> {{day}} </li>
+            <li data-day="{{dataDay}}"> {{day}} - {{weekday}} </li>
         </script>
 
 

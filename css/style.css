@@ -14,3 +14,35 @@
 .festivo {
     color: red;
 }
+
+.btn-navigation {
+    padding: 5px 20px;
+    border-radius: 5px;
+    background: purple;
+    color: white;
+    border: none;
+}
+
+.btn-navigation:disabled {
+    background: #efefef;
+    cursor: not-allowed;
+}
+
+ul {
+    width: 100%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+ul li {
+    width: calc(95% / 7);
+    height: 60px;
+    border: 1px solid grey;
+    list-style: none;
+    padding: 5px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
